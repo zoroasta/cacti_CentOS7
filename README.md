@@ -87,8 +87,9 @@ systemctl restart httpd.service
 
 # Setting Cron for Cacti
 vi /etc/cron.d/cacti
-Uncomment the following line
-    #*/5 * * * *    cacti   /usr/bin/php /usr/share/cacti/poller.php > /dev/null 2>&1
+
+            Uncomment the following line
+            #*/5 * * * *    cacti   /usr/bin/php /usr/share/cacti/poller.php > /dev/null 2>&1
 
 
 
