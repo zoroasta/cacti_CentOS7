@@ -44,13 +44,15 @@ Bye
 
 # Install Cacti Tables to MySQL
 rpm -ql cacti | grep cacti.sql
-Sample Output:/usr/share/doc/cacti-0.8.8b/cacti.sql
-#Now we’ve of the location of Cacti.sql file, type the following command to install tables, here you need to type the Cacti user password
+
+            Sample Output:/usr/share/doc/cacti-0.8.8b/cacti.sql
+
 mysql -u cacti -p cacti < /usr/share/doc/cacti-0.8.8b/cacti.sql
 Enter password:
 
 # Configure MySQL settings for Cacti
 vi /etc/cacti/db.php
+
 /* make sure these values reflect your actual database/host/user/password */
 $database_type = "mysql";
 $database_default = "cacti";
