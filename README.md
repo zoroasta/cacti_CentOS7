@@ -11,6 +11,7 @@ yum install php-snmp
 # Install NET-SNMP
 yum install net-snmp-utils net-snmp-libs
 # Install RRDTool
+yum install rrdtool
 # Staring Apache, MySQL and SNMP Services
 systemctl enable httpd.service
 systemctl enable mariadb.service
@@ -21,12 +22,12 @@ yum install cacti
 mysqladmin -u root password YOUR-PASSWORD-HERE
 # Create MySQL Cacti Database
 mysql -u root -p
-Enter password:
-Welcome to the MariaDB monitor.  Commands end with ; or \g.
-Your MariaDB connection id is 3
-Server version: 5.5.41-MariaDB MariaDB Server
-Copyright (c) 2000, 2014, Oracle, MariaDB Corporation Ab and others.
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+Enter password:;
+Welcome to the MariaDB monitor.  Commands end with ; or \g.;
+Your MariaDB connection id is 3;
+Server version: 5.5.41-MariaDB MariaDB Server;
+Copyright (c) 2000, 2014, Oracle, MariaDB Corporation Ab and others.;
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.;
 
 MariaDB [(none)]> create database cacti;
 Query OK, 1 row affected (0.00 sec)
