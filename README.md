@@ -68,9 +68,9 @@ firewall-cmd --reload
 
 # Configuring Apache Server for Cacti Installation
 vi /etc/httpd/conf.d/cacti.conf
-  Alias /cacti    /usr/share/cacti
 
-  <Directory /usr/share/cacti/>
+            Alias /cacti    /usr/share/cacti
+            <Directory /usr/share/cacti/>
         <IfModule mod_authz_core.c>
                 # httpd 2.4
                 Require all granted
