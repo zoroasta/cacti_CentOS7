@@ -23,6 +23,7 @@ mysqladmin -u root password YOUR-PASSWORD-HERE
 # Create MySQL Cacti Database
 mysql -u root -p
 Enter password
+
             Welcome to the MariaDB monitor.  Commands end with ; or \g.;
             Your MariaDB connection id is 3
             Server version: 5.5.41-MariaDB MariaDB Server
