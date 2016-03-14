@@ -53,14 +53,14 @@ Enter password:
 # Configure MySQL settings for Cacti
 vi /etc/cacti/db.php
 
-/* make sure these values reflect your actual database/host/user/password */
-$database_type = "mysql";
-$database_default = "cacti";
-$database_hostname = "localhost";
-$database_username = "cacti";
-$database_password = "your-password-here";
-$database_port = "3306";
-$database_ssl = false;
+            /* make sure these values reflect your actual database/host/user/password */
+            $database_type = "mysql";
+            $database_default = "cacti";
+            $database_hostname = "localhost";
+            $database_username = "cacti";
+            $database_password = "your-password-here";
+            $database_port = "3306";
+            $database_ssl = false;
 
 # Configuring Firewall for Cacti
 firewall-cmd --permanent --zone=public --add-service=http
